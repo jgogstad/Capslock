@@ -7,6 +7,25 @@
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json",
   "rules": [
     {
+      "description": "Disable Cmd-H",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "h",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [{
+            "key_code": "left_arrow"
+          }]
+        }
+      ]
+    },
+    {
       "description": "CapsLock to Hyper/Escape",
       "manipulators": [
         {
