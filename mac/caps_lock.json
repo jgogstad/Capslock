@@ -2011,7 +2011,8 @@
           },
           "to": [
             {
-              "key_code": "equal_sign"
+              "key_code": "return_or_enter",
+              "modifiers": "left_shift"
             }
           ],
           "conditions": [{
