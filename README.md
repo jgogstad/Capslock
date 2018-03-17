@@ -10,7 +10,7 @@
 
 * Powerful: Make Capslock a great new modifier key: **Hyper(✱)**. 
 * Well-Designed:  High-Freq key in hot-area. Bring lots of useful functionalities.
-* Compatiable: Work well with other modifiers, appliactions, devices.
+* Compatible: Work well with other modifiers, applications, devices.
 * Light-Weight:  Just a small script, carry it everywhere !
 * [Design Document](design.md)
 
@@ -23,10 +23,6 @@
   - macOS High Sierra (10.13)
   - macOS Sierra (10.12)
   - macOS EI Capitan (10.11)
-- [CapsLock(Mac-Old)](mac-old/) via karabiner
-  - before OS X 10.11 
-- [CapsLock(Windows)](win/) via AutoHotKey
-  - XP, 7, 8, 10
 
 
 ## Install (mac)
@@ -39,7 +35,7 @@
 # This Repo
 karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/caps_lock.json
 
-# Karabiner-Elements Offical Script Gallery
+# Karabiner-Elements Official Script Gallery
 karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs.org%2Fosx%2Fkarabiner%2Fcomplex_modifications%2Fjson%2Fcaps_lock_enhancement.json
 ```
 
@@ -55,7 +51,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 ### Basic
 
-`✱` Hyper actually maps to `⌃⌥⇧⌘` (all right modifiers) , It works well with additional left modifiers. And compatible with most application. Hold CapsLock to enable `Hyper` funcationality while press it will emit an `Escape`.
+Hold CapsLock to enable `Hyper` `✱` functionality while press it will emit an `Escape`.
 
 | Origin    | Maps to    | Comment                    |
 | --------- | ---------- | -------------------------- |
@@ -67,7 +63,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 - Hold  `✱` Hyper to enable navigators
 - Hold additional `⌘` Command for **selection** . (just like holding ⇧shift in normal)
 
-| Origin | Maps to        | Comment                  |
+| `✱`+   | Maps to        | Comment                  |
 | ------ | -------------- | ------------------------ |
 | `H`    | `←` LeftArrow  | cursor left              |
 | `J`    | `↓` DownArrow  | cursor down              |
@@ -80,7 +76,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 ### Deletion
 
-| Origin    | Maps to                            | Comment             |
+| `✱`+      | Maps to                            | Comment             |
 | --------- | ---------------------------------- | ------------------- |
 | `N`       | `⌥⌫`  Option + ForwardDelete       | Delete a word ahead |
 | `M`       | `⌫` ForwardDelete                  | Delete a char ahead |
@@ -90,45 +86,47 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 ### Window Control
 
-| Origin           | Maps to                 | Comment                                  |
+| `✱`+             | Maps to                 | Comment                                  |
 | ---------------- | ----------------------- | ---------------------------------------- |
 | `⇥` Tab          | `⌘⇥` Command+Tab        | Switch Window                            |
 | `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Window Reversely                  |
 | `Q`              | `⌘Q`                    | Close Window                             |
 | `W`              | `⌘W`                    | Close Tab                                |
-| `E`              | Open Safari             | Open Web Browser                         |
-| `⌘E`             | Open Finder             | Open File Browser                        |
-| `A`              | `⌃⌥⇧⌘A`                 | Leaves to [Moom](https://manytricks.com/moom/), ※a window resize app |
-| `⌘A`             | `⌃↑`  Ctrl+UpArrow      | OSX Expose All                           |
-| `S`              | `⌃⇥`  Ctrl+Tab          | Switch Tab                               |
-| `⌘S`             | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
+| `R`              | Open Safari             | Open Web Browser                         |
+| `⌘R`             | Open Finder             | Open File Browser                        |
+| `/`              | `⌥⇧␣`                   | TotalSpaces: Single desktop exposé       |
+| `⌘/`             | `⌥⇧⌘␣`                  | TotalSpaces: Instant expose              |
+| `C`              | `⌃←`                    | TotalSpaces: Switch to left desktop      |
+| `V`              | `⌃→`                    | TotalSpaces: Switch to right desktop     |
+| `⌘C`             | `⌃⇧←`                    | TotalSpaces: Switch to left desktop, with current window      |
+| `⌘V`             | `⌃⇧→`                    | TotalSpaces: Switch to right desktop, with current window     |
+| `E`              | `⌘⇧}`                   | Switch Tab                               |
+| `⌘E`             | `⌘⇧{`                   | Swtich Tab Reversely                     |
 | `⌘D`             | `F11`                   | Show Desktop                             |
+| `D`              | `⌃⌥⌘C`                  | SizeUp: Center Window                    |
+| `A`              | ⌃⌥⌘←                    | SizeUp: Left Side                        |
+| `S`              | ⌃⌥⌘↑                    | SizeUp: Right Side                       |
+| `Z`              | ⌃⌥⌘↓                    | SizeUp: Up Side                          |
+| `X`              | ⌃⌥⌘→                    | SizeUp: Down Side                        |
+| `⌘A`             | ⌃⌥⇧←                    | SizeUp: Upper Left Side                  |
+| `⌘S`             | ⌃⌥⇧↑                    | SizeUp: Upper Right Side                 |
+| `⌘Z`             | ⌃⌥⇧↓                    | SizeUp: Lower Left Side                  |
+| `⌘X`             | ⌃⌥⇧→                    | SizeUp: Lower Right Side                 |
 
-### Bash Control
 
-- Common bash utils: EOF, SIGINT, SIGTSTP, VIM/Tmux Prefix
-
-| Origin | Maps to     | Comment                                  |
-| ------ | ----------- | ---------------------------------------- |
-| `Z`    | `⌃Z` Ctrl+Z | SIGTSTP                                  |
-| `X`    | `⌃R`        | IDE Run                                  |
-| `C`    | `⌃C`        | SIGINT                                   |
-| `V`    | `⌃V`        | Vim Prefix                               |
-| `B`    | `⌃B`        | [Tmux](http://tmux.github.io) Default Prefix |
-| `D`    | `⌃D`        | EOF                                      |
 
 #### Applications
 
 - Maybe you'd like overwrite these with your own favorite apps.
 
-| Origin | Maps to                 | Comment                                  |
+| `✱`+   | Maps to                 | Comment                                  |
 | ------ | ----------------------- | ---------------------------------------- |
-| `R`    | Open iTerm2             | Great terminal for osx (`Run`)           |
-| `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...    |
-| `T`    | Open Visual Studio Code | Text Editor: Visual Studio Code          |
-| `⌘T`   | Open Typora             | Text Editor: Typora , a great WYSIWYG md editor |
-| `F`    | Open Dash               | Find API Document                        |
-| `⌘F`   | Open Dictionary         | Find words                               |
+| `Y`    | Open OmniOutliner       | Create, collect and organize information |
+| `⌘Y`   | Open Typora             | A great WYSIWYG MarkDown editor          |
+| `T`    | Open iTerm2             | A better terminal                        |
+| `⌘T`   | Open Terminal           | Vanilla terminal                         |
+| `F`    | Open Dictionary         | Find API Document                        |
+| `⌘F`   | Open SnippetsLab        | Snippets manager                         |
 | `G`    | Open Intellij IDEA      | Open IDE                                 |
 | `⌘G`   | Open Chrome             | Google Chrome                            |
 
@@ -136,7 +134,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 - Use F1,…F12 as standard functional keys, while hold hyper to turn them back.
 
-| Origin            | Maps to              | Comment                          |
+| `✱`+              | Maps to              | Comment                          |
 | ----------------- | -------------------- | -------------------------------- |
 | `F1`              | `BrightnessDown`     |                                  |
 | `F2`              | `BrightnessUp`       |                                  |
@@ -164,7 +162,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 - A more convient shift for most case
 
-| Origin             | Maps to | Comment                  |
+| `✱`+               | Maps to | Comment                  |
 | ------------------ | ------- | ------------------------ |
 | `1`                | `!`     | Exclamation              |
 | `2`                | `@`     | At                       |
@@ -178,23 +176,29 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `0`                | `)`     | Right Round Bracket      |
 | `-` Minus          | `_`     | Hyphen                   |
 | `=` Equal          | `+`     | Plus                     |
-| `[` Left Bracket   | `(`     | Left Round Bracket `⇧9`  |
-| `]`  Right Bracket | `)`     | Right Round Bracket `⇧0` |
-| `\` Back Slash     | `|`     | Bar                      |
+| `[` Left Bracket   | `{`     | Left Curly Bracket       |
+| `]`  Right Bracket | `}`     | Right Curly Bracket      |
+| `\` Back Slash     | `\|`     | Bar                      |
 | `;` Semicolon      | `:`     | Colon                    |
 | `'` Single Quote   | `"`     | DoubleQuote              |
 
 ### Misc
 
-| Origin                 | Maps to             | Comment                                  |
+| `✱`+                   | Maps to             | Comment                                  |
 | ---------------------- | ------------------- | ---------------------------------------- |
-| `⎋` Escape             | `⇪`  CapsLock       | Bug: Difficult to turn capslock off after emit |
 | `~` BackQuote          | `⌃⇧⌘4`              | macOS Area Screenshot to Clipboard       |
 | `⌘~` Command+BackQuote | `⌃⇧4`               | macOS Area Screenshot to Desktop File    |
 | `⌫` Backspace          | `⌘⌫`                | macOS Delete File                        |
-| `↩`  Return            | `=`                 | Return to Equal Sign                     |
-| `/` Slash              | `⌘/` Command+Slash  | Comment/Uncomment in many IDE            |
-| `␢` Spacebar           | `⌃␢`  Ctrl+Spacebar | Switch Input Source                      |
+| `↩`  Return            | `⇧↵`                | Shift Return, IDEA interprets this as new line below current |
+
+### Disable ⌘H
+
+macOS will "Hide current window" on ⌘H by default. When you start using hjkl for arrow keys, this behavior
+punishes missing hitting the `✱`-key quite much. This rules maps ⌘H to ←
+
+| Original combination   | Maps to             | Comment                                  |
+| ---------------------- | ------------------- | ---------------------------------------- |
+| `⌘H`                   | `←`  Left arrow     | Map ⌘H to ← |
 
 
 
