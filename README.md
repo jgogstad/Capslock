@@ -1,3 +1,12 @@
+The commit look should be pretty self explanatory, but anyway, here's the fork details:
+* Replaced Karabiner internals for signaling that Caps lock is pressed. Instead of mapping Caps lock
+to ⌃⌥⇧⌘, I'm setting an internal variable in Karabiner. This plays nicer with for instance IntelliJ which
+gets confused when it sees all those modifier keys
+* Replaced the Bash controls with more window management for SizeUp and TotalSpaces
+* Replaced application shortcuts with applications I use
+* Some minor personal preferences on Shifter (I like it to behave just like shift, e.g. `✱[` should map to `{`)
+* Added a "Disable ⌘H and ⌘⌥H" after forgetting to push `✱` too many times when reaching for vim-like arrow keys
+
 # Capslock
 
 *Make CapsLock Great Again!*  
