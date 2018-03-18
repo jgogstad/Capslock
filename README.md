@@ -10,6 +10,9 @@ gets confused when it sees all those modifier keys
 * New manipulators:
   * "Disable ⌘H and ⌘⌥H" (after forgetting to push `✱` too many times when reaching for vim-like arrow keys)
   * "Hyper IntelliJ": Use `✱` instead of `⌃` for most commands in IntelliJ
+  
+  
+This document has been updated to reflect the changes above
 
 # Capslock
 
@@ -101,8 +104,8 @@ Hold CapsLock to enable `Hyper` `✱` functionality while press it will emit an 
 
 | `✱`+             | Maps to                 | Comment                                  |
 | ---------------- | ----------------------- | ---------------------------------------- |
-| `⇥` Tab          | `⌘⇥` Command+Tab        | Switch Window                            |
-| `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Window Reversely                  |
+| `⇥` Tab          | `⌘⇥` Command+Tab        | Switch Tab                               |
+| `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Tab Reversely                  |
 | `Q`              | `⌘Q`                    | Close Window                             |
 | `W`              | `⌘W`                    | Close Tab                                |
 | `R`              | Open Safari             | Open Web Browser                         |
@@ -111,10 +114,10 @@ Hold CapsLock to enable `Hyper` `✱` functionality while press it will emit an 
 | `⌘/`             | `⌥⇧⌘␣`                  | TotalSpaces: Instant expose              |
 | `C`              | `⌃←`                    | TotalSpaces: Switch to left desktop      |
 | `V`              | `⌃→`                    | TotalSpaces: Switch to right desktop     |
-| `⌘C`             | `⌃⇧←`                    | TotalSpaces: Switch to left desktop, with current window      |
-| `⌘V`             | `⌃⇧→`                    | TotalSpaces: Switch to right desktop, with current window     |
-| `E`              | `⌘⇧}`                   | Switch Tab                               |
-| `⌘E`             | `⌘⇧{`                   | Swtich Tab Reversely                     |
+| `⌘C`             | `⌃⇧←`                   | TotalSpaces: Switch to left desktop, with current window      |
+| `⌘V`             | `⌃⇧→`                   | TotalSpaces: Switch to right desktop, with current window     |
+| `E`              |                         | Unused                                   |
+| `⌘E`             |                         | Unused                                   |
 | `⌘D`             | `F11`                   | Show Desktop                             |
 | `D`              | `⌃⌥⌘C`                  | SizeUp: Center Window                    |
 | `A`              | ⌃⌥⌘←                    | SizeUp: Left Side                        |
