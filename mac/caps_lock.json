@@ -84,6 +84,11 @@
             "modifiers": [
               "left_command"
             ]
+          }],
+          "conditions": [{
+            "type": "variable_unless",
+            "name": "caps_lock pressed",
+            "value": 1
           }]
         },
         {
@@ -112,7 +117,12 @@
             {
               "key_code": "tab"
             }
-          ]
+          ],
+          "conditions": [{
+            "type": "variable_unless",
+            "name": "caps_lock pressed",
+            "value": 1
+          }]
         }
       ]
     },
@@ -2110,42 +2120,6 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_command"
-          },
-          "to": [
-            {
-              "set_variable": {
-                "lazy": true,
-                "name": "caps_lock and command pressed",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "caps_lock and command pressed",
-                "value": 0
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "caps_lock pressed",
-              "value": 1
-            },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.jetbrains\\.intellij.*"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
             "key_code": "spacebar",
             "modifiers": {
               "optional": [
@@ -2198,50 +2172,6 @@
               "type": "variable_if",
               "name": "caps_lock pressed",
               "value": 1
-            },
-            {
-              "type": "variable_if",
-              "name": "caps_lock and command pressed",
-              "value": 0
-            },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.jetbrains\\.intellij.*"
-              ]
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "tab",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "tab",
-              "modifiers": [
-                "left_control",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "caps_lock and command pressed",
-              "value": 1
-            },
-            {
-              "type": "frontmost_application_if",
-              "bundle_identifiers": [
-                "^com\\.jetbrains\\.intellij.*"
-              ]
             }
           ]
         },

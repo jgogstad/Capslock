@@ -10,6 +10,7 @@ gets confused when it sees all those modifier keys
 * New manipulators:
   * "Disable ⌘H and ⌘⌥H" (after forgetting to push `✱` too many times when reaching for vim-like arrow keys)
   * "Hyper IntelliJ": Use `✱` instead of `⌃` for most commands in IntelliJ
+  * "Tab functional": Turn the Tab key into HyperTab. Number row becomes F-keys.
   
   
 This document has been updated to reflect the changes above
