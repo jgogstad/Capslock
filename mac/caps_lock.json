@@ -485,9 +485,9 @@
           },
           "to": [
             {
-              "key_code": "tab",
+              "key_code": "open_bracket",
               "modifiers": [
-                "left_control",
+                "left_command",
                 "left_shift"
               ]
             }
@@ -518,9 +518,10 @@
           },
           "to": [
             {
-              "key_code": "tab",
+              "key_code": "close_bracket",
               "modifiers": [
-                "left_control"
+                "left_command",
+                "left_shift"
               ]
             }
           ],
@@ -664,56 +665,6 @@
               "key_code": "spacebar",
               "modifiers": [
                 "left_option",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [{
-            "type": "variable_if",
-            "name": "caps_lock pressed",
-            "value": 1
-          }]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "open_bracket",
-              "modifiers": [
-                "left_command",
-                "left_shift"
-              ]
-            }
-          ],
-          "conditions": [{
-            "type": "variable_if",
-            "name": "caps_lock pressed",
-            "value": 1
-          }]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
-          },
-          "to": [
-            {
-              "key_code": "close_bracket",
-              "modifiers": [
-                "left_command",
                 "left_shift"
               ]
             }
@@ -2112,16 +2063,12 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_command",
-            "modifiers": {
-              "optional": [
-                "any"
-              ]
-            }
+            "key_code": "left_command"
           },
           "to": [
             {
               "set_variable": {
+                "lazy": true,
                 "name": "caps_lock and command pressed",
                 "value": 1
               }
